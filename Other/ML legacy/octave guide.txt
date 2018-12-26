@@ -1,0 +1,78 @@
+Open octave-cli in terminal
+
+cd 'project_folder_name'  - change workspace directory
+Pwd  - print current workspace directory
+PS1('>> ')  - default print modifier
+
+who / whos  - check available variables
+load('file_name.dat')  - load file data (and save it to field_name variable)
+
+clear my_var  - delete variable my_var
+clear  - delete all variables
+
+my_arr(x:y)  - get elements x to y from my_arr
+
+save file_name.mat my_var  - saves variable my_var to file filename.mat
+save file_name.txt my_var -ascii  - saves variable my_var to file filename.txt (readable format)
+
+my_matrix(X,:)  - X-th row of my_matrix
+my_matrix(:,Y)  - Y-th column of my_matrix
+my_matrix([X1, X2],:)  - X1-th and X2-th row of my_matrix
+my_matrix(X, Y)=some_values  - assigning (maybe multiple)
+[my_matrix1, my_matrix2]  - appending column
+my_matrix(:)  - cast matrix to vector
+
+[A B]  - concatenation of B to A (to the right)
+[A; B]  - concatenation of B to A (to the bottom)
+
+A .* B  - element-wise multiplication
+A .^ X  - element-wise pow
+A ./ and etc.
+log(V)
+exp(V)
+
+A'  - transpose A
+
+max(A) - vax Val
+[val, ind] = max(A)  - max value val and index ind 
+
+A < 3  - 0/1 values at indices where <3 is TRUE
+
+find(A < 3)  - indices where <3 is TRUE
+
+sum(A)  - sum of all elements
+prod(A)  - product
+floor(A)
+ceil(A) 
+
+max(A,[],AXIS)  - max values at column if AXIS=1 and on the rows where AXIS=2
+
+flipup/fliplr(A)  - flip matrix left to right or upside down
+
+
+
+
+
+plot(X)  - plot func or matrix
+plot(X, func)  - plot func or matrix
+hold on;  - draw few plots at once
+plot(X,'r')  - draw red
+xlabel('x_axis_name')
+ylabel('y_axis_name')
+legend('f1_name','f2_name'...)
+
+print -dpng\filename.png'  - save plot 
+
+figure(figure_ind)
+
+subplot(a,b,c) - ХЗ
+imagesc(A)
+imagesc(A), colorbar, colormap grey
+
+
+for i=1:10,
+	v(i)=2^i;
+End;
+
+
+addpath('folder_name')  - adding search paths
