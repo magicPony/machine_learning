@@ -1,1 +1,0 @@
-function A = warmUpExercise()A = [];A = eye(5);A = inv(A);
